@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import Home from "../component/Home/Home";
 import About from "../component/About/About";
 import Contact from "../component/Contact/Contact";
+import NotFound from "../component/NotFound";
 
 class Router extends Component {
     render() {
@@ -19,6 +20,9 @@ class Router extends Component {
                     <Route exact path="about" element={<About />} />
                     <Route exact path="contact" element={<Contact />} />
                 </Route>
+
+                {/* 404 Page   */}
+                <Route path="*" element={<NotFound />}/>
             </Routes>
         );
     }
