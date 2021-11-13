@@ -4,6 +4,8 @@ import Home from "../component/Home/Home";
 import About from "../component/About/About";
 import Contact from "../component/Contact/Contact";
 import NotFound from "../component/NotFound";
+import SingleParameter from "../component/DynamicPages/SingleParameter";
+import MultipleParameter from "../component/DynamicPages/MultipleParameter";
 
 class Router extends Component {
     render() {
@@ -20,6 +22,10 @@ class Router extends Component {
                     <Route exact path="about" element={<About />} />
                     <Route exact path="contact" element={<Contact />} />
                 </Route>
+
+                {/* Pass parameter to route */}
+                <Route exact path="/dynamic-single/:name" element={<SingleParameter />} />
+                <Route exact path="/dynamic-multiple/:name/:phone" element={<MultipleParameter />} />
 
                 {/* 404 Page   */}
                 <Route path="*" element={<NotFound />}/>
