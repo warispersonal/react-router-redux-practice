@@ -19,7 +19,6 @@ class Router extends Component {
                     <Route exact path="about" element={<About />} />
                     <Route exact path="contact" element={<Contact />} />
                 </Route>
-                
             </Routes>
         );
     }
