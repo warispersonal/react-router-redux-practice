@@ -8,10 +8,10 @@ class Header extends Component {
                 <nav style={{ textAlign: "center"}}>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
+                    <Link to="/posts">Posts</Link>
                     <Link to="/contact">Contact</Link>
                     <Link to="/dynamic-single/Waris">Single Dynamic Parameter URL</Link>
                     <Link to="/dynamic-multiple/Waris/03086529243">Multiple Dynamic Parameter URL</Link>
-
                 </nav>
             </div>
         );

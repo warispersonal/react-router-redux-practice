@@ -1,5 +1,6 @@
 export const HOME_PAGE_URL = '/'
 export const ABOUT_PAGE_URL = '/about'
 export const CONTACT_PAGE_URL = '/contact'
+export const POST_PAGE_URL = '/posts'
 export const DYNAMIC_SINGLE_PAGE_URL = '/dynamic-single/:name'
 export const DYNAMIC_MULTIPLE_PAGE_URL = '/dynamic-multiple/:name/:phone'

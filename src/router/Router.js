@@ -7,6 +7,8 @@ import NotFound from "../component/NotFound";
 import SingleParameter from "../component/DynamicPages/SingleParameter";
 import MultipleParameter from "../component/DynamicPages/MultipleParameter";
 import * as URL from "./MianRouteList/DataRoutes";
+import {POST_PAGE_URL} from "./MianRouteList/DataRoutes";
+import Posts from "../component/Post/Posts";
 
 class Router extends Component {
     render() {
@@ -34,6 +36,7 @@ class Router extends Component {
                 {/*  Route url from constant file  */}
                 <Route exact path={URL.HOME_PAGE_URL} element={<Home />} />
                 <Route exact path={URL.ABOUT_PAGE_URL} element={<About />} />
+                <Route exact path={URL.POST_PAGE_URL} element={<Posts />} />
                 <Route exact path={URL.CONTACT_PAGE_URL} element={<Contact />} />
                 <Route exact path={URL.DYNAMIC_SINGLE_PAGE_URL} element={<SingleParameter />} />
                 <Route exact path={URL.DYNAMIC_MULTIPLE_PAGE_URL} element={<MultipleParameter />} />
